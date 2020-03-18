@@ -1,0 +1,800 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />-->
+<title>Untitled Document</title>
+<link href="baground yellow.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.min.js"></script>
+</div>
+<script type="text/javascript">
+ function sum() {
+            var txtFirstNo = document.getElementById('txtFirstNo').value;
+            var txtSecondNo = document.getElementById('txtSecondNo').value;
+            var result = parseInt(txtFirstNo) + parseInt(txtSecondNo);
+            if (!isNaN(result)) {
+                document.getElementById('txtResult').value = result;
+            }
+        }
+
+
+ function sum() {
+            var txtFirstNo2 = document.getElementById('txtFirstNo2').value;
+            var txtSecondNo = document.getElementById('txtSecondNo').value;
+            var result = parseInt(txtFirstNo2) + parseInt(txtSecondNo);
+            if (!isNaN(result)) {
+                document.getElementById('txtResult2').value = result;
+            }
+        }
+    </script>
+</head>
+<style>
+.body
+    {
+background:#FFF;
+    }
+table,tr,td{
+	border:1px double #000;
+	border-collapse:collapse;
+	}
+.sycoinputclass1
+    {
+	background-color:#FF0
+	}
+.sycoimputclass2{
+	background-color:#FFCCCC
+	}
+.sycoimputcssORG{
+    background-color:#FF9900
+    }
+    .sblue{
+	background-color:#036
+	}
+.depsky{
+	background-color:#366
+	}        
+.deepgreen{
+	background-color:#060
+	}		
+.red{
+	background-color:#F00
+	}
+</style>
+<body>
+<div class="h.s.d">
+<!--<form name="reg_frm" method="post" action="registration.php">-->
+<form>
+<table width="2800" border="2" id="tableT" >
+   <tr>
+      <th width="168">DATE</th>
+      <th width="100">DIP</th>
+      <th width="120">As per Chart</th>
+      <th width="120", bgcolor="#FFFF00">O/S</th>
+      <th width="120", bgcolor="#FFFF00">DEFR</th>
+      <th width="118" bordercolor="#FFFFFF">RECE</th>
+      <th width="125" bgcolor="#FFCCCC">TOTAL</th>
+      <th width="120" bgcolor="#FFFF00">TOTAL</th>
+      <th width="150">&nbsp;</th>
+      <th width="120">MITER</th>
+      <th width="120" bgcolor="#FF9900">&nbsp; </th>
+      <th width="120">&nbsp;</th>
+      <th width="120" bgcolor="#FF9900">&nbsp;</th>
+      <th width="150">&nbsp;</th>
+      <th width="120">SALE</th>
+      <th width="120">C/SALE</th>
+      <td colspan="2"></th>
+      </tr>
+      
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>  
+
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>  
+
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>  
+
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>  
+
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>  
+
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>  
+
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>  
+
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>  
+
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>  
+
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+
+
+      <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+  
+  
+        <tr>
+      <td> <input type="date"  name="1a"/></td>
+      <td><input type="text" name="1b" width="100" maxlength="200000"/></td>
+     <td> <input type="text" width="120" id="txtFirstNo" onkeyup="sum()" /></td>
+      <td> <input type="text" width="120" id="txtFirstNo2" onkeyup="sum()" class="sycoinputclass1" /></td>
+      <td><input type="text" width="120" class="sycoinputclass1"name="1e"/></td>
+    <td> <input type="text" width="118" id="txtSecondNo" onkeyup="sum()" /></td>
+    
+    <td><input type="text" width="125" id="txtResult"  class="sycoimputclass2"/></td>
+     <td><input type="text" width="120" id="txtResult2"  class="sycoinputclass1"/></td>
+     
+      <td ><width="100"/></td>
+      <td><input type="text" width="120"  name="1c"/></td>
+       <td><input type="text" width="120" name="1b" class="sycoimputcssORG"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td><input type="text" width="120" name="1d" class="sycoimputcssORG"/></td>
+       <td ><width="100"/></td>
+       <td><input type="text" width="120" id="txtSecondNo" onkeyup="min" name="1b"/></td>
+      <td><input type="text" width="120" name="1c"/></td>
+      <td width="120"><input type="text" width="120" name="1b"/></td>
+      <td width="120"><input type="text" width="120" name="1c"/></td>
+     <td width="431"> <button type="button" class="btn btn-outline-success">Success</button></td>
+</tr>      
+      
+  
+  
+  
+      </table>
+</form>
+<script type="text/javascript">
+ function moveCursort(fromtextbox,totextbox)
+ {
+	var length =fromtextbox.value.length;
+	var maxLength = fromtextbox.getAttribute("maxLength");
+	if(length == maxLenth){
+		document.getElementById(totelxtbox).focus();
+		}
+
+}
+
+
+</script>
+
+<!--<script src="jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>-->
+</body>
+</html>

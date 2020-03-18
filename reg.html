@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link  rel="stylesheet" type="text/css" href="style.css"/>
+<!--<script>
+function Pass_match()
+{
+	var pass1=document.getElementById("pass1").value;
+	var pass2=document.getElementById("pass2").value;
+	if(pass1!=pass2)
+	{
+		alert("Password Mismatched");
+	}
+	
+}
+</script>-->
+
+<body>
+ <form action="reg.php" method="post" onsubmit="return validate()" name="registration">
+<div class="loginbox">
+<img src="logo.jpg" class="avatar" />
+<h1>Registration</h1>
+<div>
+<p>User Name</p>
+<input type="text" name="us_name" placeholder="Enter Username"/>
+<div id="name_error" class="val_error"></div>
+</div>
+<p>User Email</p>
+<div>
+<input type="email" name="us_emai" placeholder="Entter User email"/>
+<div id="email_error" class="val_error"></div>
+</div>
+<p>Password</p>
+<div>
+<input type="password" name="us_pass" id="pass1" placeholder="Enter Password"/>
+</div>
+<p>Repeat your password</p>
+<div>
+<input type="password" name="re_pass"  id="pass2" placeholder="Repeat your password" onblur="Pass_match()"/>
+<div id="password_error" class="val_error"></div>
+</div>
+<input type="submit" name="signup" placeholder="Register"/>
+<a href="index.html">Already a member</a>
+</form>
+</body>
+</head>
+</html>
+
+<!-- adding javascript-->
+<script type="text/javascript">
+	// GETTING ALL INPUT TEXT OBJECTS
+	var Username = document.forms["vform"]["Username"];
+	var email = document.forms["vform"]["email"];
+	var pass1 = document.forms["vform"]["pass1"];
+	var pass2 = document.forms["vform"]["pass2"];
+	
+	//GETTING ALL ERROR DISPLAY OBJECTS
+	var name_error = document.getElementById("name_error");
+	var email_error = document.getElementById("email_error");
+	var password_error = document.getElementById("password_error");
+	
+	//STTING ALL EVENT LISTENERS
+	Username.addEventListener("blur", nameVerify, true);
+	email.addEventListener("blur", emailVerify, true);
+	pass2.addEventListener("blur", pass1Verify, true);
+	
+	//validation function
+	function  validate(){
+		if(Username.value == ""){
+			Username.style.border = "1px solid red";
+			name_error.textContent = "Username is required";
+			Username.focus();
+			return false;
+		}
+	
+		//email validation
+		if(email.value == ""){
+			email.style.border = "1px solid red";
+			email_error.textContent = "email is required";
+			email.focus();
+			return false;
+		}
+			//pass validation
+			if(pass1.value == ""){
+			pass1.style.border = "1px solid red";
+			password_error.textContent = "pass1 is required";
+			pass1.focus();
+			return false;
+	   }
+	   //check if two password
+	   if (pass1.value != pass2.value) {
+		   pass1.style.border = "1px solid red";
+		   pass2.style.border = "1pxsolid red";
+		   password_error.innerHTML = "the two passwords do not match ";
+		   return false;
+	   }
+
+	}
+	//event handler fuction
+	function nameVerify(){
+		if(Username.value !=""){
+			Username.style.border = "1px solid #fff;";
+			name_error.innerHTML = "";
+			return true;
+		}			
+	}
+	function emailVerify(){
+		if(email.value !=""){
+			email.style.border = "1px solid #fff;";
+			email_error.innerHTML = "";
+			return true;
+		}			
+	}
+	function pass2Verify(){
+		if(pass2.value !=""){
+			pass2.style.border = "1px solid #fff;";
+			password_error.innerHTML = "";
+			return true;
+		}		
+	}
+	</script>
